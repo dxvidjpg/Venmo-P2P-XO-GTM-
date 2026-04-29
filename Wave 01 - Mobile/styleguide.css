@@ -1,0 +1,52 @@
+:root {
+  --digital-ctas-linksvenmo-digital-blue: rgba(0, 116, 222, 1);
+  --h3-36pt-font-family: "Athletics", Helvetica;
+  --h3-36pt-font-weight: 700;
+  --h3-36pt-font-size: 36px;
+  --h3-36pt-letter-spacing: -0.72px;
+  --h3-36pt-line-height: 100%;
+  --h3-36pt-font-style: normal;
+  --body-r-font-family: "Arial", Helvetica;
+  --body-r-font-weight: 400;
+  --body-r-font-size: 16px;
+  --body-r-letter-spacing: 0px;
+  --body-r-line-height: 139.9999976158142%;
+  --body-r-font-style: normal;
+  --body-body-font-family: "Arial", Helvetica;
+  --body-body-font-weight: 400;
+  --body-body-font-size: 16px;
+  --body-body-letter-spacing: 0px;
+  --body-body-line-height: 139.9999976158142%;
+  --body-body-font-style: normal;
+  --variable-collection-dark-mode-venmo-blue: rgba(76, 139, 227, 1);
+  --variable-collection-dark-mode-blue-tint-4: rgba(0, 30, 58, 1);
+  --variable-collection-dark-mode-black-tint: rgba(32, 33, 36, 1);
+  --variable-collection-DARK-MODE-CACTUS: rgba(6, 51, 36, 1);
+  --variable-collection-dark-mode-denim: rgba(228, 194, 248, 1);
+  --venmo-brand-colors-black: rgba(0, 0, 0, 1);
+  --venmo-brand-colors-black-duplicate: rgba(0, 0, 0, 1);
+  --venmo-brand-colors-venmo-digital-blue: rgba(0, 116, 222, 1);
+  --color-tokens-in-text-link: var(--venmo-brand-colors-venmo-digital-blue);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-venmo-brand-colors-mode="light-mode">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-venmo-brand-colors-mode="light-mode"] {
+  --venmo-brand-colors-black: rgba(0, 0, 0, 1);
+  --venmo-brand-colors-black-duplicate: rgba(0, 0, 0, 1);
+}
+
+[data-venmo-brand-colors-mode="dark-mode"] {
+  --venmo-brand-colors-black: rgba(255, 255, 255, 1);
+  --venmo-brand-colors-black-duplicate: rgba(255, 255, 255, 1);
+}
